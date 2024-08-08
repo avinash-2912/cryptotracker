@@ -45,8 +45,8 @@ const App = () => {
     <div>
       <h1>Crypto Tracker</h1>
       <button onClick={toggleForm}>Get Alert</button>
-      {showForm && <AlertForm toggleForm={toggleForm} />}  // Show the alert form if `showForm` is true
-      <PriceList prices={prices} loading={loading} />  // Pass the prices and loading state to PriceList
+      {showForm && <AlertForm toggleForm={toggleForm} />}  
+      <PriceList prices={prices} loading={loading} />
     </div>
   );
 };
