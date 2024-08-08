@@ -13,7 +13,7 @@ const server = http.createServer(app);
 // Initializing socket.io with CORS settings
 const io = socketIo(server, {
   cors: {
-    origin: "http://localhost:8800",  // Allow requests from the frontend
+    origin: "http://localhost:3000",  // Allow requests from the frontend
     methods: ["GET", "POST"]  // Allow GET and POST methods
   }
 });
